@@ -38,4 +38,14 @@ public class SinglyLinkedListTest {
         assertThat(list.size(), is(equalTo(1)));
     }
 
+    @Test
+    public void sizeMethodOfListWithMultipleElementsReturnsCorrectResult() {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append("1");
+        list.append("2");
+        list.append("3");
+
+        assertThat(list.size(), is(equalTo(3)));
+    }
+
 }

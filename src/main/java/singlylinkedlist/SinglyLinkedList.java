@@ -2,18 +2,18 @@ package singlylinkedlist;
 
 public class SinglyLinkedList {
 
-    private boolean isEmpty = true;
+    private int size = 0;
 
     public boolean isEmpty() {
-        return isEmpty;
+        return size == 0;
     }
 
     public int size() {
-        return isEmpty ? 0 : 1;
+        return size;
     }
 
     public void append(String data) {
-        isEmpty = false;
+        size++;
     }
 
 }
