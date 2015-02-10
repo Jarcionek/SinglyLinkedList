@@ -6,4 +6,8 @@ public class SinglyLinkedList {
         return true;
     }
 
+    public int size() {
+        return 0;
+    }
+
 }

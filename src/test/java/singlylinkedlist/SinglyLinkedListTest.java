@@ -14,5 +14,12 @@ public class SinglyLinkedListTest {
 
         assertThat(list.isEmpty(), is(equalTo(true)));
     }
+    
+    @Test
+    public void sizeMethodOfNewListReturnsZero() {
+        SinglyLinkedList list = new SinglyLinkedList();
+
+        assertThat(list.size(), is(equalTo(0)));
+    }
 
 }
