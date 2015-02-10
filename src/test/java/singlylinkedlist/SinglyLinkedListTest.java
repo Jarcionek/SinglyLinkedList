@@ -48,4 +48,14 @@ public class SinglyLinkedListTest {
         assertThat(list.size(), is(equalTo(3)));
     }
 
+    @Test
+    public void getMethodOfListWithSingleElementReturnsThatElement() {
+        String element = "the only element";
+
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append(element);
+
+        assertThat(list.get(0), is(equalTo(element)));
+    }
+
 }
