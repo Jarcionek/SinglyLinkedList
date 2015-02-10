@@ -30,6 +30,10 @@ public class SinglyLinkedList {
         if (index < 0) {
             throw new IndexOutOfBoundsException("index: " + index);
         }
+        if (index >= size) {
+            throw new IndexOutOfBoundsException("index: " + index + ", size: " + size);
+        }
+
         Node node = head;
         for (int i = 0; i < index; i++) {
             node = node.getNext();

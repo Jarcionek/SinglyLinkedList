@@ -78,4 +78,14 @@ public class SinglyLinkedListTest {
         list.get(-1);
     }
 
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void getMethodThrowsExceptionForIndexLargerThanSize() {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append("0");
+        list.append("1");
+        list.append("2");
+
+        list.get(3);
+    }
+
 }
