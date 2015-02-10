@@ -69,7 +69,13 @@ public class SinglyLinkedListTest {
         list.append("fourth element");
 
         assertThat(list.get(2), is(equalTo(thirdElement)));
+    }
 
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void getMethodThrowsExceptionForNegativeIndex() {
+        SinglyLinkedList list = new SinglyLinkedList();
+
+        list.get(-1);
     }
 
 }

@@ -27,6 +27,9 @@ public class SinglyLinkedList {
     }
 
     public String get(int index) {
+        if (index < 0) {
+            throw new IndexOutOfBoundsException("index: " + index);
+        }
         Node node = head;
         for (int i = 0; i < index; i++) {
             node = node.getNext();
