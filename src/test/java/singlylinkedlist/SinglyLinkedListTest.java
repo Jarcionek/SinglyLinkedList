@@ -30,4 +30,12 @@ public class SinglyLinkedListTest {
         assertThat(list.isEmpty(), is(equalTo(false)));
     }
 
+    @Test
+    public void sizeMethodOfListWithSingleElementReturnsCorrectResult() {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append("data");
+
+        assertThat(list.size(), is(equalTo(1)));
+    }
+
 }
