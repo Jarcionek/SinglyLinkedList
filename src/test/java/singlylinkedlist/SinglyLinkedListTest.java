@@ -58,4 +58,18 @@ public class SinglyLinkedListTest {
         assertThat(list.get(0), is(equalTo(element)));
     }
 
+    @Test
+    public void getMethodOfListWithMultipleElementsReturnsElementAtGivenIndex() {
+        String thirdElement = "third element";
+
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append("first element");
+        list.append("second element");
+        list.append(thirdElement);
+        list.append("fourth element");
+
+        assertThat(list.get(2), is(equalTo(thirdElement)));
+
+    }
+
 }
