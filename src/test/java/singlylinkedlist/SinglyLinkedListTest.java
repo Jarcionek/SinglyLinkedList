@@ -22,4 +22,12 @@ public class SinglyLinkedListTest {
         assertThat(list.size(), is(equalTo(0)));
     }
 
+    @Test
+    public void isEmptyMethodOfNonEmptyListReturnsFalse() {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.append("some data");
+
+        assertThat(list.isEmpty(), is(equalTo(false)));
+    }
+
 }
